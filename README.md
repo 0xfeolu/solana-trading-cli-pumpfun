@@ -1,49 +1,46 @@
-![Solana Trading CLI Logo](https://i.postimg.cc/W1ZgctKr/sol-repo.jpg)
+🎨 ![Solana Trading CLI Logo](https://i.postimg.cc/W1ZgctKr/sol-repo.jpg)
 
-# Solana Trading CLI - Pump.Fun
+# 🚀 Solana Trading CLI - Pump.Fun
 
-A simple, fast, powerful Library for building custom trading strategies on Solana. It's built for speed, variety, and real-time data, using Cutting-edge Tech. Here's what you get:
+⚡ A simple, fast, powerful Library for building custom trading strategies on Solana. Built for speed, variety, and real-time data, using cutting-edge tech. Here's what you get:
 
-- Uses low-latency systems like Jito, BloXroute, and Nozomi to execute trades,
+- ⚡ Low-latency systems like **Jito, BloXroute, and Nozomi** for trade execution
+- 🗃️ Read/write **Pump.fun** data in a local **PostgreSQL** DB
+- 🔄 Supports **DEXs**: Raydium, Orca, Meteora, and Pump.fun
+- 🌊 Stream transactions/account state via **gRPC** (Geyser)
+- 📡 Fetch account state via optimized **RPC** methods
 
-- Read/write Pumpfun data in a local postgreSQL db.
+Perfect for both **newbies** and **pro traders**!  
 
-- Supports DEXs like Raydium, Orca, Meteora, and Pump.fun for more trading options.
+---
 
-- Streams transactions and/or accounts state from a third-party's geyser gRPC node.
+## 🧩 Core Components  
 
-- Fetches account state info via optimized RPC methods.
+### 🪙 Token Creation & Multi-DEX Support  
+Create **SPL tokens** on Solana (via Pump.fun) and trade across multiple DEXs:  
 
-This bot fits into your trading system, perfect for newbies.
+| Exchange   | Documentation          |
+|------------|------------------------|
+| Jupiter    | [📖 CLI Guide](https://t.me/vicckr) |
+| Raydium    | [📖 CLI Guide](https://t.me/vicckr) |
+| Orca       | [📖 CLI Guide](https://t.me/vicckr) |
+| Meteora    | [📖 CLI Guide](https://t.me/vicckr) |
+| Pump.fun   | ✅ **Integrated**       |
 
-# Core Components
+---
 
-## Token Creation and Multi-DEX Support
-Create your own Solana SPL tokens on mainnet via Pump.fun and swap tokens across multiple decentralized exchanges:
+### 🗄️ Local Database Setup *(In Development)*  
+Store **Pump.fun** trading data in **PostgreSQL**.  
 
-| Exchange | Documentation |
-|----------|---------------|
-| Jupiter  | [CLI & trading functions guide](https://t.me/vicckr) |
-| Raydium   | [CLI & trading functions guide](https://t.me/vicckr) |
-| Orca      | [CLI & trading functions guide](https://t.me/vicckr) |
-| Meteora   | [CLI & trading functions guide](https://t.me/vicckr) |
-| Pump.fun  | Integrated support |
+📂 **[Database Docs](docker_postgres_db/README.md)**  
 
-
-## Local Database Setup (In Development)
-
-The project includes a PostgreSQL database for storing Pump.fun trading data and market analysis. For detailed setup instructions, see [Database Documentation](docker_postgres_db/README.md).
-
-Quick setup:
 ```bash
-# Navigate to database directory
-cd docker_postgres_db
+# Quick setup 🛠️  
+cd docker_postgres_db  
 
-# Create environment file
-cp .env.example .env
+cp .env.example .env  
 
-# Start database
-docker-compose up -d
+docker-compose up -d  
 ```
 
 
@@ -88,14 +85,30 @@ Our comprehensive toolkit provides everything you need to create your own custom
 Follow these steps to get your development environment set up:
 
 1. **Clone the repository**
+   ```bash
+   git clone https://github.com/0xfeolu/solana-trading-cli-pumpfun.git
+   ```
 
 2. **Navigate to the project directory**
+   ```bash
+   cd solana-trading-cli-pumpfun
+   ```
 
 3. **Install the correct Node.js version**
+   ```bash
+   nvm install
+   nvm use
+   ```
 
 4. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
 5. **Run the test script**
+   ```bash
+   ts-node test.ts
+   ```
 
 ### Installation Prerequisites
 
